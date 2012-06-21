@@ -34,7 +34,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 This plugin is easy to install like other plug-ins of Wordpress as you need to just follow the below mentioned steps:
 
-1. upload newsScroller folder to wp-Content/plugins folder.
+1. upload vertical-news-scroller folder to wp-Content/plugins folder.
 
 2. Activate the plugin from Dashboard / Plugins window.
 
@@ -50,7 +50,7 @@ This plugin is easy to install like other plug-ins of Wordpress as you need to j
 
 4.Thats it your scrolling news will appear.
 
-5.For css changes please change it to wp-content/plugins/newsScroller/CSS/newsscrollcss.css
+5.For css changes please change it to wp-content/plugins/vertical-news-scroller/CSS/newsscrollcss.css
 
 
 == Screenshots ==
