@@ -66,7 +66,7 @@ This plugin is free for everyone! Since it's released under the GPL, you can use
  == Changelog ==
  Stable 1.0 first release
  
- Version 2.3.5 (06/21/2012)
+ Version 1.1 (06/21/2012)
  
  1.Css not loading issue fixed.
  2.Add News Form validation not working fixed.
