@@ -9,7 +9,7 @@
     
     
        wp_enqueue_script('jquery'); 
-       wp_enqueue_script('jquery.validate', '/wp-content/plugins/newsScroller/js/jquery.validate.js', array('jquery'));
+       wp_enqueue_script('jquery.validate', '/wp-content/plugins/vertical-news-scroller/js/jquery.validate.js', array('jquery'));
 
       
       register_activation_hook(__FILE__,'install_newsscroller');
@@ -595,7 +595,7 @@ class verticalScroll extends WP_Widget {
             $query="SELECT * FROM ".$wpdb->prefix."scroll_news order by createdon desc limit $maxitem";
             $rows=$wpdb->get_results($query,'ARRAY_A');
             ?>
-            <link rel="stylesheet" type="text/css" media="all" href="<?php echo plugins_url('newsScroller/css/newsscrollcss.css'); ?>" />
+            <link rel="stylesheet" type="text/css" media="all" href="<?php echo plugins_url('vertical-news-scroller/css/newsscrollcss.css'); ?>" />
              <marquee height='<?php echo $height; ?>'  onmouseout="this.start()" onmouseover="this.stop()" scrolldelay="<?php echo $delay; ?>" scrollamount="<?php echo $scrollamt; ?>" direction="up" behavior="scroll" >
              <?php
              

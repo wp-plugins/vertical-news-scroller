@@ -4,7 +4,7 @@ Tags: Vertical news,Vertical scrolling news,Scrolling news WordPress,WordPress d
 Donate link: http://www.my-php-scripts.net/donate_for_news_scroller.php
 Requires at least: 3.0
 Tested up to: 3.4
-Stable tag: trunk
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -65,6 +65,12 @@ This plugin is free for everyone! Since it's released under the GPL, you can use
 
  == Changelog ==
  Stable 1.0 first release
+ 
+ Version 2.3.5 (06/21/2012)
+ 
+ 1.Css not loading issue fixed.
+ 2.Add News Form validation not working fixed.
+ 
  
  == Frequently Asked Questions ==
  1.How to use ?
