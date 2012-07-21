@@ -1,10 +1,10 @@
 === Vertical News Scroller ===
 Contributors: Nikunj Gandhi
-Tags: Vertical news,Vertical scrolling news,Scrolling news WordPress,WordPress dynamic news,Free scrolling news wordpress plugin,News plugin WordPress
+Tags: Vertical news,Vertical scrolling news,Scrolling news WordPress,WordPress dynamic news,Free scrolling news wordpress plugin,News plugin WordPress,WordPress set post or page as news
 Donate link: http://www.my-php-scripts.net/donate_for_news_scroller.php
 Requires at least: 3.0
 Tested up to: 3.4
-Stable tag: 1.1
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,6 +12,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
  Vertical News Scroller is plugin for display a vertical scrolling news for WordPress blog.Admin can manage any number of news.Admin can add,edit delete news.
  Simple and easy news scroller.Admin can have option for display text with news or just news title only.Admin can add custom link to news.
 
+**Find Vertical News Scroller Plugin at [Advanced PHP Scripts](http://www.my-php-scripts.net/index.php/Wordpress/vertical-news-scroller-advanced.html)**
 
 
 =Features=
@@ -25,6 +26,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 7. Easy To Install Plugin
 8. Premium Support Available
 9. Admin can change dont and other settings from css.
+
+=Pro Version Features=
+1.Admin can set any post or page as a news no need to add edit news manually.
+2.Go to add or edit post or page and checkbox check add this post or page as news
+
 
 [Get Support](http://my-php-scripts.net/) 
 
@@ -44,7 +50,7 @@ This plugin is easy to install like other plug-ins of Wordpress as you need to j
 
 1.Use of Vertical News Scroller is easy after activating plugin go to Manage Scrolling News menu.
 
-2.Add some news atleast two,three news for good,But It can be any number of new.
+2.Add some news atleast two,three news for good,But It can be any number of news.
 
 3.Go to Appearance-->Widgets and drag and drop "Vertical news scroll" widget to your desired location(like left,right,footer).
 
@@ -58,6 +64,7 @@ This plugin is easy to install like other plug-ins of Wordpress as you need to j
 1. User site preview of scrolling news
 2. Widget preview admin site. 
 3. Admin manage news preview.
+4. Vertical News Scroller Pro version .
 
 == License ==
 
@@ -71,10 +78,20 @@ This plugin is free for everyone! Since it's released under the GPL, you can use
  1.Css not loading issue fixed.
  2.Add News Form validation not working fixed.
  
+
+Version 1.2 (07/20/2012)
+
+1.Bug fix for adding news with single quote and double quote 
+  in news content and title.
+2.Css changes for admin panel.
+3.Release Pro version
+
+
+
  
  == Frequently Asked Questions ==
  1.How to use ?
  For frontend side use please use widget feature.more more info use readme installation and usage noates.
  
  == Upgrade Notice ==
- Its first version so no Upgrade Notice
+ Please upgrade to 1.2 stable
