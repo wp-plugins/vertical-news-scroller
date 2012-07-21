@@ -4,7 +4,7 @@ Tags: Vertical news,Vertical scrolling news,Scrolling news WordPress,WordPress d
 Donate link: http://www.my-php-scripts.net/donate_for_news_scroller.php
 Requires at least: 3.0
 Tested up to: 3.4
-Stable tag: 1.2
+Stable tag: 1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -77,6 +77,10 @@ This plugin is free for everyone! Since it's released under the GPL, you can use
 
 == Changelog ==
 
+= 1.3 =
+
+* Added support for single quote and double quote in news title .
+
 = 1.2 =
 
 * Bug fix for adding news with single quote and double quote 
@@ -99,6 +103,10 @@ This plugin is free for everyone! Since it's released under the GPL, you can use
 
 
 == Upgrade Notice ==
+
+= 1.3 =
+
+* Added support for single quote and double quote in news title .
 
 * Bug fix for adding news with single quote and double quote 
   in news content and title.
