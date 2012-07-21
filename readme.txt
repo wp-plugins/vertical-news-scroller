@@ -9,10 +9,11 @@ License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
- Vertical News Scroller is plugin for display a vertical scrolling news for WordPress blog.Admin can manage any number of news.Admin can add,edit delete news.
- Simple and easy news scroller.Admin can have option for display text with news or just news title only.Admin can add custom link to news.
+Vertical News Scroller is plugin for display a vertical scrolling news for WordPress blog.Admin can manage any number of news.Admin can add,edit delete news.
+ 
+Simple and easy news scroller.Admin can have option for display text with news or just news title only.Admin can add custom link to news.
 
-**Find Vertical News Scroller Plugin at [Advanced PHP Scripts](http://www.my-php-scripts.net/index.php/Wordpress/vertical-news-scroller-advanced.html)**
+**Find Vertical News Scroller Pro Plugin at [Advanced PHP Scripts](http://www.my-php-scripts.net/index.php/Wordpress/vertical-news-scroller-advanced.html)**
 
 
 =Features=
@@ -28,7 +29,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 9. Admin can change dont and other settings from css.
 
 =Pro Version Features=
+
 1.Admin can set any post or page as a news no need to add edit news manually.
+
 2.Go to add or edit post or page and checkbox check add this post or page as news
 
 
@@ -70,28 +73,52 @@ This plugin is easy to install like other plug-ins of Wordpress as you need to j
 
 This plugin is free for everyone! Since it's released under the GPL, you can use it free of charge on your personal or commercial blog. But you can make some donations if you realy find it useful.
 
- == Changelog ==
- Stable 1.0 first release
- 
- Version 1.1 (06/21/2012)
- 
- 1.Css not loading issue fixed.
- 2.Add News Form validation not working fixed.
- 
+== Changelog ==
 
-Version 1.2 (07/20/2012)
+= 1.2 =
 
-1.Bug fix for adding news with single quote and double quote 
+* Bug fix for adding news with single quote and double quote 
   in news content and title.
-2.Css changes for admin panel.
-3.Release Pro version
+
+* Css changes for admin panel.
+
+* Release Pro version.
+
+= 1.1 =
+
+* Css not loading issue fixed.
+
+* Add News Form validation not working fixed
+
+= 1.0 =
+
+* Stable 1.0 first release
 
 
+== Upgrade Notice ==
+
+= 1.2 =
+
+* Bug fix for adding news with single quote and double quote 
+  in news content and title.
+
+* Css changes for admin panel.
+
+* Release Pro version.
+
+= 1.1 =
+
+* Css not loading issue fixed.
+
+* Add News Form validation not working fixed
+
+= 1.0 =
+
+* Stable 1.0 first release
 
  
- == Frequently Asked Questions ==
- 1.How to use ?
- For frontend side use please use widget feature.more more info use readme installation and usage noates.
- 
- == Upgrade Notice ==
- Please upgrade to 1.2 stable
+== Frequently Asked Questions ==
+
+1.How to use ?
+
+For frontend side use please use widget feature.more more info use readme installation and usage notes.
