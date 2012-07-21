@@ -2,7 +2,7 @@
    /* 
     Plugin Name: Vertical News Scroller
     Plugin URI:http://www.postfreeadvertising.com/
-    Description: Plugin for scrolling Vertical News on wordpress theme.Admin can add any number of news.
+    Description: Plugin for scrolling Vertical News on wordpress site.Admin can add any number of news.
     Author: nik 
     Author URI: http://www.my-php-scripts.net
     Version : 1.2
@@ -111,9 +111,12 @@
         <a target="_blank" title="Donate" href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=nik_gandhi007@yahoo.com&amp;item_name=Scroller News&amp;item_number=scroll news support&amp;no_shipping=0&amp;no_note=1&amp;tax=0&amp;currency_code=USD&amp;lc=US&amp;bn=PP%2dDonationsBF&amp;charset=UTF%2d8">
         <img id="help us for free plugin" height="30" width="90" src="http://www.postfreeadvertising.com/images/paypaldonate.jpg" border="0" alt="help us for free plugin" title="help us for free plugin">
         </a>
-
         </td>
-        </tr></table>
+        </tr>
+        </table>
+        <a href="http://www.siteground.com" onClick="this.href='http://siteground.com/wordpress-hosting.htm?afbannercode=522704075e580e2abb138af05f3e95ab'" ><img src="https://ua.siteground.com/img/banners/application/wordpress/468x60.gif" alt="Web Hosting" width="468" height="60" border="0"></a>
+        <span><h3 style="color: blue;"><a target="_blank" href="http://www.my-php-scripts.net/index.php/Wordpress/vertical-news-scroller-advanced.html">Update to Vertical News Scroller Pro</a></h3></span>
+        
         <?php 
              
              $messages=get_option('scrollnews_messages'); 
@@ -135,7 +138,6 @@
         ?>
 
       <div style="width: 100%;">  
-        
         <div style="float:left;width:69%;" >
         <div class="icon32 icon32-posts-post" id="icon-edit"><br></div>
         <h2>News <a class="button add-new-h2" href="admin.php?page=Scrollnews-settings&action=addedit">Add New</a> </h2>
@@ -288,7 +290,10 @@
 <?php 
   }   
   else if(strtolower($action)==strtolower('addedit')){
-  
+    ?>
+    <a href="http://www.siteground.com" onClick="this.href='http://siteground.com/wordpress-hosting.htm?afbannercode=522704075e580e2abb138af05f3e95ab'" ><img src="https://ua.siteground.com/img/banners/application/wordpress/468x60.gif" alt="Web Hosting" width="468" height="60" border="0"></a>
+    <span><h3 style="color: blue;"><a target="_blank" href="http://www.my-php-scripts.net/index.php/Wordpress/vertical-news-scroller-advanced.html">Update to Vertical News Scroller Pro</a></h3></span>
+  <?php        
     if(isset($_POST['btnsave'])){
     
        //edit save
