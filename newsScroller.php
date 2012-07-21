@@ -5,7 +5,7 @@
     Description: Plugin for scrolling Vertical News on wordpress site.Admin can add any number of news.
     Author: nik 
     Author URI: http://www.my-php-scripts.net
-    Version : 1.2
+    Version : 1.3
     */
     
     
