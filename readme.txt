@@ -30,9 +30,8 @@ Simple and easy news scroller.Admin can have option for display text with news o
 
 =Pro Version Features=
 
-1.Admin can set any post or page as a news no need to add edit news manually.
-
-2.Go to add or edit post or page and checkbox check add this post or page as news
+1. Admin can set any post or page as a news no need to add edit news manually.
+2. Go to add or edit post or page and checkbox check add this post or page as news.
 
 
 [Get Support](http://my-php-scripts.net/) 
@@ -42,6 +41,9 @@ Simple and easy news scroller.Admin can have option for display text with news o
 
 
 This plugin is easy to install like other plug-ins of Wordpress as you need to just follow the below mentioned steps:
+
+1. Admin can set any post or page as a news no need to add edit news manually.
+2. Go to add or edit post or page and checkbox check add this post or page as news.
 
 1. upload vertical-news-scroller folder to wp-Content/plugins folder.
 
@@ -88,7 +90,8 @@ This plugin is free for everyone! Since it's released under the GPL, you can use
 
 * Css not loading issue fixed.
 
-* Add News Form validation not working fixed
+* Add News Form validation not working fixed.
+
 
 = 1.0 =
 
@@ -96,8 +99,6 @@ This plugin is free for everyone! Since it's released under the GPL, you can use
 
 
 == Upgrade Notice ==
-
-= 1.2 =
 
 * Bug fix for adding news with single quote and double quote 
   in news content and title.
@@ -110,7 +111,7 @@ This plugin is free for everyone! Since it's released under the GPL, you can use
 
 * Css not loading issue fixed.
 
-* Add News Form validation not working fixed
+* Add News Form validation not working fixed.
 
 = 1.0 =
 
