@@ -1,10 +1,11 @@
 <?php
    /* 
     Plugin Name: Vertical News Scroller
-    Plugin URI:http://www.my-php-scripts.net 
-    Description: Plugin for scrolling Vertical News on wordpress theme.Admin can add any number of news.
+    Plugin URI:http://www.postfreeadvertising.com/
+    Description: Plugin for scrolling Vertical News on wordpress site.Admin can add any number of news.
     Author: nik 
-    Version : 1.1
+    Author URI: http://www.my-php-scripts.net
+    Version : 1.3
     */
     
     
@@ -110,9 +111,12 @@
         <a target="_blank" title="Donate" href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=nik_gandhi007@yahoo.com&amp;item_name=Scroller News&amp;item_number=scroll news support&amp;no_shipping=0&amp;no_note=1&amp;tax=0&amp;currency_code=USD&amp;lc=US&amp;bn=PP%2dDonationsBF&amp;charset=UTF%2d8">
         <img id="help us for free plugin" height="30" width="90" src="http://www.postfreeadvertising.com/images/paypaldonate.jpg" border="0" alt="help us for free plugin" title="help us for free plugin">
         </a>
-
         </td>
-        </tr></table>
+        </tr>
+        </table>
+        <a href="http://www.siteground.com" onClick="this.href='http://siteground.com/wordpress-hosting.htm?afbannercode=522704075e580e2abb138af05f3e95ab'" ><img src="https://ua.siteground.com/img/banners/application/wordpress/468x60.gif" alt="Web Hosting" width="468" height="60" border="0"></a>
+        <span><h3 style="color: blue;"><a target="_blank" href="http://www.my-php-scripts.net/index.php/Wordpress/vertical-news-scroller-advanced.html">Update to Vertical News Scroller Pro</a></h3></span>
+        
         <?php 
              
              $messages=get_option('scrollnews_messages'); 
@@ -134,7 +138,6 @@
         ?>
 
       <div style="width: 100%;">  
-        
         <div style="float:left;width:69%;" >
         <div class="icon32 icon32-posts-post" id="icon-edit"><br></div>
         <h2>News <a class="button add-new-h2" href="admin.php?page=Scrollnews-settings&action=addedit">Add New</a> </h2>
@@ -205,7 +208,7 @@
                             ?>
                             <tr valign="top" class="alternate author-self status-publish format-default iedit" id="post-113">
                                 <th style="width:30px" class="check-column" scope="row"><input type="checkbox" value="<?php echo $row['id'] ?>" name="news[]"></th>
-                                <td style="width:200px" class="post-title page-title column-title"><strong><?php echo $row['title'] ?></strong></td>  
+                                <td style="width:200px" class="post-title page-title column-title"><strong><?php echo stripslashes($row['title']) ?></strong></td>  
                                 <td style="width:100px" class="date column-date"><abbr title="2011/12/22 11:57:24 AM"><?php echo $row['createdon'] ?></td>
                                 <td style="width:50px" class="post-title page-title column-title"><strong><a href='<?php echo $editlink; ?>' title="edit">Edit</a></strong></td>  
                                 <td style="width:50px" class="post-title page-title column-title"><strong><a href='<?php echo $deletelink; ?>' onclick="return confirmDelete();"  title="delete">Delete</a> </strong></td>  
@@ -287,7 +290,10 @@
 <?php 
   }   
   else if(strtolower($action)==strtolower('addedit')){
-  
+    ?>
+    <a href="http://www.siteground.com" onClick="this.href='http://siteground.com/wordpress-hosting.htm?afbannercode=522704075e580e2abb138af05f3e95ab'" ><img src="https://ua.siteground.com/img/banners/application/wordpress/468x60.gif" alt="Web Hosting" width="468" height="60" border="0"></a>
+    <span><h3 style="color: blue;"><a target="_blank" href="http://www.my-php-scripts.net/index.php/Wordpress/vertical-news-scroller-advanced.html">Update to Vertical News Scroller Pro</a></h3></span>
+  <?php        
     if(isset($_POST['btnsave'])){
     
        //edit save
@@ -295,9 +301,9 @@
        
             //add new
           
-                $title=trim($_POST['newstitle']);
+                $title=trim(addslashes($_POST['newstitle']));
                 $newsurl=trim($_POST['newsurl']);
-                $contant=trim($_POST['newscont']);
+                $contant=trim(addslashes($_POST['newscont']));
                 $newsId=trim($_POST['newsid']);
                 
                 $location='admin.php?page=Scrollnews-settings';
@@ -328,9 +334,9 @@
       
              //add new
           
-                $title=trim($_POST['newstitle']);
+                $title=trim(addslashes($_POST['newstitle']));
                 $newsurl=trim($_POST['newsurl']);
-                $contant=trim($_POST['newscont']);
+                $contant=trim(addslashes($_POST['newscont']));
                 $createdOn=date('Y-m-d h:i:s');
                 
                 $location='admin.php?page=Scrollnews-settings';
@@ -384,9 +390,9 @@
                 
                 if(is_object($myrow)){
                 
-                  $title=$myrow->title;
+                  $title=stripslashes($myrow->title);
                   $newsurl=$myrow->custom_link;
-                  $contant=$myrow->content;
+                  $contant=stripslashes($myrow->content);
                   
                 }   
               
@@ -410,7 +416,7 @@
                 <div id="post-body-content">
                   <form method="post" action="" id="addnews" name="addnews">
                 
-                      <div class="stuffbox" id="namediv">
+                      <div class="stuffbox" id="namediv" style="min-width:550px;">
                          <h3><label for="link_name">News Title</label></h3>
                         <div class="inside">
                             <input type="text" id="newstitle"  class="required" tabindex="1" size="30" name="newstitle" value="<?php echo $title;?>">
@@ -420,7 +426,7 @@
                             <p><?php _e('This title will scroll'); ?></p>
                          </div>
                       </div>
-                      <div class="stuffbox" id="namediv">
+                      <div class="stuffbox" id="namediv" style="min-width:550px;">
                          <h3><label for="link_name">News Url</label></h3>
                         <div class="inside">
                             <input type="text" id="newsurl" class="required url"  tabindex="1" size="30" name="newsurl" value="<?php echo $newsurl; ?>">
@@ -430,10 +436,10 @@
                             <p><?php _e('On news title click users will redirect to this url.'); ?></p>
                          </div>
                       </div>
-                      <div class="stuffbox" id="namediv">
+                      <div class="stuffbox" id="namediv" style="min-width:550px;">
                          <h3><label for="link_name">News Content</label></h3>
                         <div class="inside">
-                            <textarea cols="90" class="required" rows="6" id="newscont" name="newscont"><?php echo $contant; ?></textarea>
+                            <textarea cols="90" class="required" style="width:530px" rows="6" id="newscont" name="newscont"><?php echo $contant; ?></textarea>
                              <div style="clear:both"></div>
                              <div></div>
                              <div style="clear:both"></div>
@@ -569,7 +575,7 @@
       }    
 }  
     
-class verticalScroll extends WP_Widget {
+  class verticalScroll extends WP_Widget {
     
         function verticalScroll() {
         
@@ -602,11 +608,11 @@ class verticalScroll extends WP_Widget {
                foreach($rows as $row){
                 ?>
                  <div style="padding:<?php echo $padding; ?>px">
-                    <div class="newsscroller_title"><?php if($add_link_to_title){?><a href='<?php echo $row['custom_link']; ?>' target="_blank"><?php } ?><?php echo  $row['title']; ?><?php if($add_link_to_title){?></a><?php } ?></div>
+                    <div class="newsscroller_title"><?php if($add_link_to_title){?><a href='<?php echo $row['custom_link']; ?>' target="_blank"><?php } ?><?php echo  stripslashes($row['title']) ; ?><?php if($add_link_to_title){?></a><?php } ?></div>
                     <div style="clear:both"></div>
                     <?php if($show_content){ ?>
                         <div class="scrollercontent">
-                            <?php echo  $row['content']; ?>
+                            <?php echo stripslashes(nl2br($row['content'])); ?>
                         </div>
                      <?php } ?>       
                  </div>
@@ -621,6 +627,9 @@ class verticalScroll extends WP_Widget {
             
 
        }
+       
+   
+
        function update( $new_instance, $old_instance ) {
        
             $instance = $old_instance;
@@ -652,21 +661,16 @@ class verticalScroll extends WP_Widget {
         <label for="<?php echo $this->get_field_id('add_link_to_title'); ?>">Add link to news title</label>
         </p>
         <p><label for="<?php echo $this->get_field_id('maxitem'); ?>">Max item from news:</label>
-        <input class="widefat" id="<?php echo $this->get_field_id('maxitem'); ?>" name="<?php echo
-        $this->get_field_name('maxitem'); ?>"
+        <input class="widefat" id="<?php echo $this->get_field_id('maxitem'); ?>" name="<?php echo $this->get_field_name('maxitem'); ?>"
         type="text" value="<?php echo $instance['maxitem']; ?>" />
         </p>
       
         <p><label for="<?php echo $this->get_field_id('height'); ?>">Height of scroller:</label>
-        <input class="widefat" id="<?php echo $this->get_field_id('height'); ?>" name="<?php echo
-        $this->get_field_name('height'); ?>"
-        type="text" value="<?php echo $instance['height']; ?>" />px
+        <input class="widefat" id="<?php echo $this->get_field_id('height'); ?>" name="<?php echo $this->get_field_name('height'); ?>" type="text" value="<?php echo $instance['height']; ?>" />px
         </p>
          
         <p><label for="<?php echo $this->get_field_id('padding'); ?>">Padding:</label>
-        <input class="widefat" id="<?php echo $this->get_field_id('padding'); ?>" name="<?php echo
-        $this->get_field_name('padding'); ?>"
-        type="text" value="<?php echo $instance['padding']; ?>" />px
+        <input class="widefat" id="<?php echo $this->get_field_id('padding'); ?>" name="<?php echo $this->get_field_name('padding'); ?>" type="text" value="<?php echo $instance['padding']; ?>" />px
         </p>
         
         <p>
@@ -676,16 +680,12 @@ class verticalScroll extends WP_Widget {
         </p>
          
          <p><label for="<?php echo $this->get_field_id('delay'); ?>">Delay :</label>
-        <input class="widefat" id="<?php echo $this->get_field_id('delay'); ?>" name="<?php echo
-        $this->get_field_name('delay'); ?>"
-        type="text" value="<?php echo $instance['delay']; ?>" />Micro Sec
+         <input class="widefat" id="<?php echo $this->get_field_id('delay'); ?>" name="<?php echo $this->get_field_name('delay'); ?>" type="text" value="<?php echo $instance['delay']; ?>" />Micro Sec
         </p>
         <p>
         
         <p><label for="<?php echo $this->get_field_id('scrollamount'); ?>">Scroll amount :</label>
-        <input class="widefat" id="<?php echo $this->get_field_id('scrollamount'); ?>" name="<?php echo
-        $this->get_field_name('scrollamount'); ?>"
-        type="text" value="<?php echo $instance['scrollamount']; ?>" />(Ie 1,2,3)
+        <input class="widefat" id="<?php echo $this->get_field_id('scrollamount'); ?>" name="<?php echo $this->get_field_name('scrollamount'); ?>" type="text" value="<?php echo $instance['scrollamount']; ?>" />(Ie 1,2,3)
         </p>
         <p>
       
