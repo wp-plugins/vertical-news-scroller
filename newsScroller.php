@@ -1,11 +1,11 @@
 <?php
    /* 
-    Plugin Name: Vertical News Scroller
+    Plugin Name:Vertical News Scroller
     Plugin URI:http://www.postfreeadvertising.com/
-    Description: Plugin for scrolling Vertical News on wordpress site.Admin can add any number of news.
-    Author: nik 
+    Description:Plugin for scrolling Vertical News on wordpress site.Admin can add any number of news.
+    Author:nik 
     Author URI: http://www.my-php-scripts.net
-    Version : 1.3
+    Version:1.3
     */
     
     
