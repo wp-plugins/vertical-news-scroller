@@ -26,10 +26,10 @@
            
                   $sql = "CREATE TABLE " . $table_name . " (
                        id int(10) unsigned NOT NULL auto_increment,
-                       title varchar(200) NOT NULL,
-                       content varchar(800) NOT NULL,
+                       title varchar(1000) NOT NULL,
+                       content varchar(2000) NOT NULL,
                        createdon datetime NOT NULL,
-                       custom_link varchar(100) default NULL,
+                       custom_link varchar(1000) default NULL,
                       PRIMARY KEY  (id)
                 );";
                require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
