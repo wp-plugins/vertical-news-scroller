@@ -27,12 +27,13 @@ Simple and easy news scroller.Admin can have option for display text with news o
 6. No Need Of Knowledge of PHP, HTML .
 7. Easy To Install Plugin
 8. Premium Support Available
-9. Admin can change dont and other settings from css.
+9. Admin can change font and other settings from css.
 
 =Pro Version Features=
 
 1. Admin can set any post or page as a news no need to add edit news manually.
 2. Go to add or edit post or page and checkbox check add this post or page as news.
+3.No advertise in plugin.
 
 
 [Get Support](http://my-php-scripts.net/) 
