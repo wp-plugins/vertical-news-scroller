@@ -16,6 +16,7 @@ Simple and easy news scroller.Admin can have option for display text with news o
 
 **Find Vertical News Scroller Pro Plugin at [Advanced PHP Scripts](http://www.my-php-scripts.net/index.php/Wordpress/vertical-news-scroller-advanced.html)**
 
+**Demo Vertical News Scroller Pro and Free at [Advanced PHP Scripts](http://www.my-php scripts.net/index.php/Wordpress/vertical-news-scroller-advanced.html)**
 
 =Features=
 
@@ -31,9 +32,10 @@ Simple and easy news scroller.Admin can have option for display text with news o
 
 =Pro Version Features=
 
-1. Admin can set any post or page as a news no need to add edit news manually.
-2. Go to add or edit post or page and checkbox check add this post or page as news.
-3.No advertise in plugin.
+1. Now pro version has two type news style modern(jquery scroller) and classic(marquee).
+2. Admin can set any post or page as a news no need to add edit news manually.
+3. Go to add or edit post or page and checkbox check add this post or page as news.
+4.No advertise in plugin.
 
 
 [Get Support](http://my-php-scripts.net/) 
