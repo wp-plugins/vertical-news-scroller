@@ -74,6 +74,8 @@ This plugin is easy to install like other plug-ins of Wordpress as you need to j
 2. Widget preview admin site. 
 3. Admin manage news preview.
 4. Vertical News Scroller Pro version .
+5. Vertical News Scroller Pro version News Scroller Type.
+
 
 == License ==
 
