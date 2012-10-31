@@ -15,14 +15,19 @@ Vertical News Scroller is plugin for display a vertical scrolling news for WordP
 Simple and easy news scroller.Admin can have option for display text with news or just news title only.Admin can add custom link to news.
 
 
+Check official website for live demo [http://www.my-php-scripts.net/index.php/Wordpress/vertical-news-scroller-advanced.html](http://www.my-php-scripts.net/index.php/Wordpress/vertical-news-scroller-advanced.html)
+
+*   [Live Demo](http://www.my-php-scripts.net/index.php/Wordpress/vertical-news-scroller-advanced.html)    
+
+
 **Find Vertical News Scroller Pro Plugin at [Advanced PHP Scripts](http://www.my-php-scripts.net/index.php/Wordpress/vertical-news-scroller-advanced.html)**
 
 
-**Demo Vertical News Scroller Pro and Free at [http://www.my-php scripts.net/index.php/Wordpress/vertical-news-scroller-advanced.html](http://www.my-php scripts.net/index.php/Wordpress/vertical-news-scroller-advanced.html)**
+
 
 =Features=
 
-1. Add any number of news
+1. Add any number of news  
 2. Display desired number of news to users.
 3. Admin can manage scrolling news spped.
 4. Admin can manage scrolling news height width.
@@ -35,15 +40,12 @@ Simple and easy news scroller.Admin can have option for display text with news o
 =Pro Version Features=
 
 1. Now pro version has two type news style modern(jquery scroller) and classic(marquee).
-
 2. Admin can set any post or page as a news no need to add edit news manually.
-
 3. Go to add or edit post or page and checkbox check add this post or page as news.
-
 4.No advertise in plugin.
 
 
-[Get Support](http://my-php-scripts.net/) 
+[Get Support](http://www.my-php-scripts.net/index.php/Default-form.html) 
 
 
 == Installation ==
