@@ -114,7 +114,7 @@
         </td>
         </tr>
         </table>
-        <a href="http://www.siteground.com" onClick="this.href='http://siteground.com/wordpress-hosting.htm?afbannercode=522704075e580e2abb138af05f3e95ab'" ><img src="https://ua.siteground.com/img/banners/application/wordpress/468x60.gif" alt="Web Hosting" width="468" height="60" border="0"></a>
+        <a target="_blank" href="http://www.shareasale.com/r.cfm?b=357716&amp;u=675922&amp;m=29819&amp;urllink=&amp;afftrack="><img src="http://www.shareasale.com/image/29819/468x60.jpg" alt="Catalyst Theme - WordPress Accelerated" border="0" /></a>
         <span><h3 style="color: blue;"><a target="_blank" href="http://www.my-php-scripts.net/index.php/Wordpress/vertical-news-scroller-advanced.html">Update to Vertical News Scroller Pro</a></h3></span>
         
         <?php 
@@ -262,9 +262,9 @@
         </div>
            <div id="poststuff" class="metabox-holder has-right-sidebar" style="float:right;width:30%;"> 
              <div class="postbox"> 
-              <h3 class="hndle"><span></span>Recommended WordPress Hosting</h3> 
+              <h3 class="hndle"><span></span>Recommended WordPress Themes</h3> 
               <div class="inside">
-                   <center><a href="http://www.justhost.com/track/jh50601/CODE4" target="_top"><img border="0" src="http://img.justhost.com/300x250/jh_300x250_us_01.gif" /></a></center>
+                   <center><a target="_blank" href="http://www.shareasale.com/r.cfm?b=202505&amp;u=675922&amp;m=24570&amp;urllink=&amp;afftrack="><img src="http://www.shareasale.com/image/24570/thesis-300x250-1.png" alt="Thesis Theme for WordPress:  Options Galore and a Helpful Support Community" border="0" /></a></center>
 
                   <div style="margin:10px 5px">
           
@@ -291,7 +291,8 @@
   }   
   else if(strtolower($action)==strtolower('addedit')){
     ?>
-    <a href="http://www.siteground.com" onClick="this.href='http://siteground.com/wordpress-hosting.htm?afbannercode=522704075e580e2abb138af05f3e95ab'" ><img src="https://ua.siteground.com/img/banners/application/wordpress/468x60.gif" alt="Web Hosting" width="468" height="60" border="0"></a>
+    <br/>
+    <a target="_blank" href="http://www.shareasale.com/r.cfm?b=118929&amp;u=675922&amp;m=16894&amp;urllink=&amp;afftrack="><img src="http://www.shareasale.com/image/avahost2.gif"  border="0" /></a>
     <span><h3 style="color: blue;"><a target="_blank" href="http://www.my-php-scripts.net/index.php/Wordpress/vertical-news-scroller-advanced.html">Update to Vertical News Scroller Pro</a></h3></span>
   <?php        
     if(isset($_POST['btnsave'])){
@@ -451,7 +452,7 @@
                         <?php
                         } 
                         ?>
-                       <input type="submit" name="btnsave" id="btnsave" value="Save Changes" class="button-primary">&nbsp;&nbsp;<input type="button" name="cancle" id="cancle" value="Cancle" class="button-primary" onclick="location.href='admin.php?page=Scrollnews-settings'">
+                       <input type="submit" name="btnsave" id="btnsave" value="Save Changes" class="button-primary">&nbsp;&nbsp;<input type="button" name="cancle" id="cancle" value="Cancel" class="button-primary" onclick="location.href='admin.php?page=Scrollnews-settings'">
                                   
                  </form> 
                   <script>
@@ -476,9 +477,9 @@
          <div id="poststuff" class="metabox-holder has-right-sidebar" style="float:right;width:30%;"> 
             
              <div class="postbox"> 
-              <h3 class="hndle"><span></span>Recommended WordPress Hosting</h3> 
+              <h3 class="hndle"><span></span>Recommended WordPress SEO Tools</h3> 
               <div class="inside">
-                   <center><a href="http://www.justhost.com/track/jh50601/CODE4" target="_top"><img border="0" src="http://img.justhost.com/300x250/jh_300x250_us_01.gif" /></a></center>
+                   <center><a href="http://www.semrush.com/sem.html?ref=961672083"> <img width="300" height="250" src="http://www.berush.com/images/240x240_semrush_en.png" /></a></center>
 
                   <div style="margin:10px 5px">
           
@@ -486,9 +487,9 @@
           </div></div>
            
            <div class="postbox"> 
-              <h3 class="hndle"><span></span>Recommended WordPress Themes</h3> 
+              <h3 class="hndle"><span></span>Find Low Competition Keywords</h3> 
               <div class="inside">
-                   <center><a href="http://www.elegantthemes.com/affiliates/idevaffiliate.php?id=11715_0_1_10" target="_blank"><img border="0" src="http://www.elegantthemes.com/affiliates/banners/300x250.gif" width="300" height="250"></a></center>
+                   <center><a href="http://42eb4jw9flkrluf45q50poct4o.hop.clickbank.net/?tid=FP76479Y" target="_top"><img src="http://nichefinder.bradcallen.com/affiliates/banners/320x250.jpg" width="320" height="250" border="1" ALT="Click to Visit"></a></center>
 
                   <div style="margin:10px 5px">
           
