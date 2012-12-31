@@ -3,7 +3,7 @@ Contributors: Nikunj Gandhi
 Tags:Vertical news,Vertical scrolling news,Scrolling news WordPress,WordPress dynamic news,Free scrolling news wordpress plugin,News plugin WordPress,WordPress set post or page as news
 Donate link: http://www.my-php-scripts.net/donate_for_news_scroller.php
 Requires at least:3.0
-Tested up to:3.4
+Tested up to:3.5
 Stable tag:1.3
 Version:1.3
 License:GPLv2 or later
