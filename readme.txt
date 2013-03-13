@@ -17,7 +17,7 @@ Simple and easy news scroller.Admin can have option for display text with news o
 
 Check official website for live demo [http://www.my-php-scripts.net/index.php/Wordpress/vertical-news-scroller-advanced.html](http://www.my-php-scripts.net/index.php/Wordpress/vertical-news-scroller-advanced.html)
 
-*   [Live Demo](http://www.my-php-scripts.net/index.php/Wordpress/vertical-news-scroller-advanced.html)    
+*   [Live Demo](http://my-php-scripts.net/wpdemo/2013/01/30/wp-thumbnail-slider-and-wp-news-slider/)    
 
 
 **Find Vertical News Scroller Pro Plugin at [Advanced PHP Scripts](http://www.my-php-scripts.net/index.php/Wordpress/vertical-news-scroller-advanced.html)**
