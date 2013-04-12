@@ -625,7 +625,7 @@
              </marquee>
             
             <?php
-            
+           echo $after_widget; 
 
        }
        
