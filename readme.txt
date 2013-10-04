@@ -40,10 +40,11 @@ Check official website for live demo [http://www.my-php-scripts.net/index.php/Wo
 =Pro Version Features=
 
 1. Now pro version has two type news style modern(jquery scroller) and classic(marquee).
-2. Admin can set any post or page as a news no need to add edit news manually.
-3. Go to add or edit post or page and checkbox check add this post or page as news.
+2. Pro version support shortcode so you can print it any where in WordPress.
+3. Admin can set any post or page as a news no need to add edit news manually.
 4. Go to add or edit post or page and checkbox check add this post or page as news.
-5. Vertical News Scroller Open news link in same window Or In new tab
+5. Go to add or edit post or page and checkbox check add this post or page as news.
+6. Vertical News Scroller Open news link in same window Or In new tab
 
 
 [Get Support](http://www.my-php-scripts.net/index.php/Default-form.html) 
