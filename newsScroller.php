@@ -65,6 +65,61 @@
        }
        
     ?>
+     <!--[if !IE]><!-->
+     <style type="text/css">
+        
+            @media only screen and (max-width: 800px) {
+            
+            /* Force table to not be like tables anymore */
+            #no-more-tables table, 
+            #no-more-tables thead, 
+            #no-more-tables tbody, 
+            #no-more-tables th, 
+            #no-more-tables td, 
+            #no-more-tables tr { 
+                display: block; 
+                
+            }
+         
+            /* Hide table headers (but not display: none;, for accessibility) */
+            #no-more-tables thead tr { 
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+         
+            #no-more-tables tr { border: 1px solid #ccc; }
+         
+            #no-more-tables td { 
+                /* Behave  like a "row" */
+                border: none;
+                border-bottom: 1px solid #eee; 
+                position: relative;
+                padding-left: 50%; 
+                white-space: normal;
+                text-align:left;      
+            }
+         
+            #no-more-tables td:before { 
+                /* Now like a table header */
+                position: absolute;
+                /* Top/left values mimic padding */
+                top: 6px;
+                left: 6px;
+                width: 45%; 
+                padding-right: 10px; 
+                white-space: nowrap;
+                text-align:left;
+                font-weight: bold;
+            }
+         
+            /*
+            Label the data
+            */
+            #no-more-tables td:before { content: attr(data-title); }
+        }
+        </style>
+     <!--<![endif]-->
     <style type="text/css">
        .news_error{
          color:red;
@@ -95,7 +150,26 @@
              width:750px !important;
      
         }
-
+     #gridTbl{width: 100%;}
+    .table{width:100%;margin-bottom:18px;}.table th,.table td{padding:8px;line-height:18px;text-align:left;vertical-align:top;border-top:1px solid #E1E1E1}
+    .table th{font-weight:bold;}
+    .table thead th{vertical-align:bottom;}
+    .table thead:first-child tr th,.table thead:first-child tr td{border-top:0;}
+    .table tbody+tbody{border-top:2px solid #ddd;}
+    .table-condensed th,.table-condensed td{padding:4px 5px;background-color: #ffffff;}
+    .table-bordered{border:1px solid #ddd;border-collapse:separate;*border-collapse:collapsed;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}.table-bordered th+th,.table-bordered td+td,.table-bordered th+td,.table-bordered td+th{border-left:1px solid #E1E1E1;background-color: #ffffff;}
+    .table-bordered thead:first-child tr:first-child th,.table-bordered tbody:first-child tr:first-child th,.table-bordered tbody:first-child tr:first-child td{border-top:0;}
+    .table-bordered thead:first-child tr:first-child th:first-child,.table-bordered tbody:first-child tr:first-child td:first-child{-webkit-border-radius:4px 0 0 0;-moz-border-radius:4px 0 0 0;border-radius:4px 0 0 0;}
+    .table-bordered thead:first-child tr:first-child th:last-child,.table-bordered tbody:first-child tr:first-child td:last-child{-webkit-border-radius:0 4px 0 0;-moz-border-radius:0 4px 0 0;border-radius:0 4px 0 0;}
+    .table-bordered thead:last-child tr:last-child th:first-child,.table-bordered tbody:last-child tr:last-child td:first-child{-webkit-border-radius:0 0 0 4px;-moz-border-radius:0 0 0 4px;border-radius:0 0 0 4px;}
+    .table-bordered thead:last-child tr:last-child th:last-child,.table-bordered tbody:last-child tr:last-child td:last-child{-webkit-border-radius:0 0 4px 0;-moz-border-radius:0 0 4px 0;border-radius:0 0 4px 0;}
+    .table-striped tbody tr:nth-child(odd) td,.table-striped tbody tr:nth-child(odd) th{background-color:#f9f9f9;}
+    .table tbody tr:hover td,.table tbody tr:hover th{background-color:#f5f5f5;}
+    .alignCenter{text-align: center;}
+    .image_error{color:red;}
+    .succMsg{background:#E2F3DA ;border: 1px solid #9ADF8F;color:#556652 !important;padding:8px 8px 8px 36px;text-align:left;margin:5px;margin-left: 0px;margin-top: 30px;width:505px !important;}
+    .errMsg{background:#FFCECE ;border: 1px solid #DF8F8F;color:#665252 !important;padding:8px 8px 8px 36px; text-align:left;margin:5px;margin-left: 0px;margin-top: 30px;width:505px !important;}
+    .printCode{background: lightYellow none repeat scroll 0 0 !important;border: 1px inset orange !important;height: 36px !important;margin: 10px !important;overflow: auto !important;padding: 6px !important;text-align: left !important;color: black !important;width:auto !important;}
    </style>    
      
    <?php
@@ -104,7 +178,7 @@
        require_once("Pager.php");
       
    ?> 
-       <div class="wrap">
+       <div id="poststuff">
        <table><tr><td><a href="https://twitter.com/FreeAdsPost" class="twitter-follow-button" data-show-count="false" data-size="large" data-show-screen-name="false">Follow @FreeAdsPost</a>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></td>
         <td>
@@ -114,8 +188,7 @@
         </td>
         </tr>
         </table>
-        <a target="_blank" href="http://www.shareasale.com/r.cfm?b=357716&amp;u=675922&amp;m=29819&amp;urllink=&amp;afftrack="><img src="http://www.shareasale.com/image/29819/468x60.jpg" alt="Catalyst Theme - WordPress Accelerated" border="0" /></a>
-        <span><h3 style="color: blue;"><a target="_blank" href="http://www.my-php-scripts.net/index.php/Wordpress/vertical-news-scroller-advanced.html">Update to Vertical News Scroller Pro</a></h3></span>
+        <span><h3 style="color: blue;"><a target="_blank" href="http://www.my-php-scripts.net/index.php/Wordpress/vertical-news-scroller-advanced.html">UPGRADE TO PRO VERSION</a></h3></span>
         
         <?php 
              
@@ -137,8 +210,8 @@
              update_option('scrollnews_messages', array());     
         ?>
 
-      <div style="width: 100%;">  
-        <div style="float:left;width:69%;" >
+      <div id="post-body" class="metabox-holder columns-2">  
+        <div id="post-body-content" >
         <div class="icon32 icon32-posts-post" id="icon-edit"><br></div>
         <h2>News <a class="button add-new-h2" href="admin.php?page=Scrollnews-settings&action=addedit">Add New</a> </h2>
         <br/>    
@@ -156,77 +229,71 @@
           <br/>  
              <br/>  
          <br class="clear">
-         <table cellspacing="0" class="wp-list-table widefat fixed posts" style="width:500px">
-         <thead>
-         <tr>
-         <th style="width:30px" class="manage-column column-cb check-column" scope="col"><input type="checkbox"></th>
-        <th style="width:200px" class="manage-column column-title sortable desc" scope="col"><span>Title</span></th>
-        <th style="width:100px"  class="manage-column column-author sortable desc" scope="col"><span>Published On</span></th>
-        <th style="width:50px" class="manage-column column-author sortable desc" scope="col"><span>Edit</span></th>
-        <th style="width:50px" class="manage-column column-author sortable desc" scope="col"><span>Delete</span></th>
-        </thead>
+          <div id="no-more-tables">
+                <table cellspacing="0" id="gridTbl" class="table-bordered table-striped table-condensed cf" >
+                    <thead>
+                        <tr>
+                        <th class="manage-column column-cb check-column" scope="col"><input type="checkbox"></th>
+                        <th>Title</th>
+                        <th><span>Published On</span></th>
+                        <th><span>Edit</span></th>
+                        <th><span>Delete</span></th>
+                       </tr> 
+                    </thead>
+            
+                    <tbody id="the-list">
+                        <?php
+                            $query="SELECT * FROM ".$wpdb->prefix."scroll_news order by createdon desc";
+                            $rows=$wpdb->get_results($query,'ARRAY_A');
 
-    <tfoot>
-    <tr>
-        <th  style="width:30px" class="manage-column column-cb check-column" scope="col"><input type="checkbox"></th>
-        <th style="width:200px" class="manage-column column-title sortable desc" scope="col"><span>Title</span></th>
-        <th style="width:100px" class="manage-column column-author sortable desc" scope="col"><span>Published On</span></th>
-        <th style="width:50px" class="manage-column column-author sortable desc" scope="col"><span>Edit</span></th>
-        <th style="width:50px" class="manage-column column-author sortable desc" scope="col"><span>Delete</span></th>
-    </tr>
-    </tfoot>
+                            if(count($rows) > 0){
 
-    <tbody id="the-list">
-                   <?php
-                      $query="SELECT * FROM ".$wpdb->prefix."scroll_news order by createdon desc";
-                      $rows=$wpdb->get_results($query,'ARRAY_A');
-                    
-                    if(count($rows) > 0){
-                    
-                        $params = array(
-                                'mode'     => 'Sliding',
-                                'perPage'  => 10,
-                                'delta'    => 10,
-                                'itemData' => $rows,
-                                'fixFileName' => false,
-                               );
-                           // generate pager object
-                           $pager =& Pager::factory($params);
+                                $params = array(
+                                    'mode'     => 'Sliding',
+                                    'perPage'  => 10,
+                                    'delta'    => 10,
+                                    'itemData' => $rows,
+                                    'fixFileName' => false,
+                                );
+                                // generate pager object
+                                $pager =& Pager::factory($params);
 
-                           // get data for current page and print
-                           $pageset = $pager->getPageData();
+                                // get data for current page and print
+                                $pageset = $pager->getPageData();
 
-                           $rows = $pageset;
+                                $rows = $pageset;
 
-                                      
-                           foreach($rows as $row){ 
-                               
-                               $id=$row['id'];
-                               $editlink="admin.php?page=Scrollnews-settings&action=addedit&id=$id";
-                               $deletelink="admin.php?page=Scrollnews-settings&action=delete&id=$id";
-                               
+
+                                foreach($rows as $row){ 
+
+                                    $id=$row['id'];
+                                    $editlink="admin.php?page=Scrollnews-settings&action=addedit&id=$id";
+                                    $deletelink="admin.php?page=Scrollnews-settings&action=delete&id=$id";
+                                
+                                ?>
+                                <tr valign="top" >
+                                <td class="alignCenter check-column"   data-title="Select Record" ><input type="checkbox" value="<?php echo $row['id'] ?>" name="news[]"></td>
+                                <td class="alignCenter"   data-title="Name" ><strong><?php echo stripslashes($row['title']) ?></strong></td>  
+                                <td class="alignCenter"   data-title="Published On"><span><?php echo $row['createdon'] ?></span></td>
+                                <td class="alignCenter"   data-title="edit"><strong><a href='<?php echo $editlink; ?>' title="edit">Edit</a></strong></td>  
+                                <td class="alignCenter"   data-title="Delete"><strong><a href='<?php echo $deletelink; ?>' onclick="return confirmDelete();"  title="delete">Delete</a> </strong></td>  
+                            </tr>
+                            
+                                <?php 
+                                } 
+                            }
+                            else{
                             ?>
-                            <tr valign="top" class="alternate author-self status-publish format-default iedit" id="post-113">
-                                <th style="width:30px" class="check-column" scope="row"><input type="checkbox" value="<?php echo $row['id'] ?>" name="news[]"></th>
-                                <td style="width:200px" class="post-title page-title column-title"><strong><?php echo stripslashes($row['title']) ?></strong></td>  
-                                <td style="width:100px" class="date column-date"><abbr title="2011/12/22 11:57:24 AM"><?php echo $row['createdon'] ?></td>
-                                <td style="width:50px" class="post-title page-title column-title"><strong><a href='<?php echo $editlink; ?>' title="edit">Edit</a></strong></td>  
-                                <td style="width:50px" class="post-title page-title column-title"><strong><a href='<?php echo $deletelink; ?>' onclick="return confirmDelete();"  title="delete">Delete</a> </strong></td>  
-                           </tr>
-                     <?php 
-                             } 
-                    }
-                   else{
-                       ?>
-                   
-                      <tr valign="top" class="alternate author-self status-publish format-default iedit" id="post-113">
-                                <td colspan="5" class="post-title page-title column-title" align="center"><strong>No news found</strong></td>  
-                           </tr>
-                  <?php 
-                   } 
-                 ?>      
-        </tbody>
-  </table>
+                    
+                            <tr valign="top" class="" id="">
+                             <td colspan="5" data-title="No Record" align="center"><strong>No News Found</strong></td>  
+                            </tr>
+                            <?php 
+                            } 
+                        ?>      
+                    </tbody>
+                </table>
+         </div>
   <?php
     if(sizeof($rows)>0){
     
@@ -260,11 +327,11 @@
 
         <br class="clear">
         </div>
-           <div id="poststuff" class="metabox-holder has-right-sidebar" style="float:right;width:30%;"> 
+           <div id="postbox-container-1" class="postbox-container"> 
              <div class="postbox"> 
-              <h3 class="hndle"><span></span>Recommended WordPress Themes</h3> 
+              <h3 class="hndle"><span></span>Best WP Hosting</h3> 
               <div class="inside">
-                   <center><a target="_blank" href="http://www.shareasale.com/r.cfm?b=202505&amp;u=675922&amp;m=24570&amp;urllink=&amp;afftrack="><img src="http://www.shareasale.com/image/24570/thesis-300x250-1.png" alt="Thesis Theme for WordPress:  Options Galore and a Helpful Support Community" border="0" /></a></center>
+                   <center><a target="_blank" href="http://www.shareasale.com/r.cfm?b=531904&u=675922&m=41388&urllink=&afftrack="><img src="http://www.shareasale.com/image/41388/sas_banner_250x250.jpg" alt="WP Engine" border="0"></a></center>
 
                   <div style="margin:10px 5px">
           
@@ -272,9 +339,9 @@
           </div></div>
            
            <div class="postbox"> 
-              <h3 class="hndle"><span></span>Recommended WordPress Themes</h3> 
+              <h3 class="hndle"><span></span>Access All Themes One price</h3> 
               <div class="inside">
-                   <center><a href="http://www.elegantthemes.com/affiliates/idevaffiliate.php?id=11715_0_1_10" target="_blank"><img border="0" src="http://www.elegantthemes.com/affiliates/banners/300x250.gif" width="300" height="250"></a></center>
+                   <center><a href="http://www.elegantthemes.com/affiliates/idevaffiliate.php?id=11715_0_1_10" target="_blank"><img border="0" src="http://www.elegantthemes.com/affiliates/banners/300x250.gif" width="250" height="250"></a></center>
 
                   <div style="margin:10px 5px">
           
@@ -292,8 +359,8 @@
   else if(strtolower($action)==strtolower('addedit')){
     ?>
     <br/>
-    <a target="_blank" href="http://www.shareasale.com/r.cfm?b=118929&amp;u=675922&amp;m=16894&amp;urllink=&amp;afftrack="><img src="http://www.shareasale.com/image/avahost2.gif"  border="0" /></a>
-    <span><h3 style="color: blue;"><a target="_blank" href="http://www.my-php-scripts.net/index.php/Wordpress/vertical-news-scroller-advanced.html">Update to Vertical News Scroller Pro</a></h3></span>
+    
+    <span><h3 style="color: blue;"><a target="_blank" href="http://www.my-php-scripts.net/index.php/Wordpress/vertical-news-scroller-advanced.html">UPGRADE TO PRO VERSION</a></h3></span>
   <?php        
     if(isset($_POST['btnsave'])){
     
@@ -387,127 +454,129 @@
 
         </td>
         </tr></table>
-     <div style="width: 100%;">  
-        <div style="float:left;width:69%;" >
+     <div id="poststuff">
+        <div id="post-body" class="metabox-holder columns-2">
+        <div id="post-body-content">
             <div class="wrap">
-          <?php if(isset($_GET['id']) and $_GET['id']>0)
-          { 
-               
-                $id= $_GET['id'];
-                $query="SELECT * FROM ".$wpdb->prefix."scroll_news WHERE id=$id";
-                $myrow  = $wpdb->get_row($query);
-                
-                if(is_object($myrow)){
-                
-                  $title=stripslashes($myrow->title);
-                  $newsurl=$myrow->custom_link;
-                  $contant=stripslashes($myrow->content);
-                  
-                }   
-              
-          ?>
-           
-            <h2>Update News </h2>
-               
-          <?php }else{ 
-                  
-                  $title='';
-                  $newsurl='';
-                  $contant='';
-          
-          ?>
-          <h2>Add News </h2>
-          <?php } ?>
-            
-            <br/>
-            <div id="poststuff">
-              <div id="post-body" class="metabox-holder columns-2">
-                <div id="post-body-content">
-                  <form method="post" action="" id="addnews" name="addnews">
-                
-                      <div class="stuffbox" id="namediv" style="min-width:550px;">
-                         <h3><label for="link_name">News Title</label></h3>
-                        <div class="inside">
-                            <input type="text" id="newstitle"  class="required" tabindex="1" size="30" name="newstitle" value="<?php echo $title;?>">
-                             <div style="clear:both"></div>
-                             <div></div>
-                             <div style="clear:both"></div>
-                            <p><?php _e('This title will scroll'); ?></p>
-                         </div>
-                      </div>
-                      <div class="stuffbox" id="namediv" style="min-width:550px;">
-                         <h3><label for="link_name">News Url</label></h3>
-                        <div class="inside">
-                            <input type="text" id="newsurl" class="required url"  tabindex="1" size="30" name="newsurl" value="<?php echo $newsurl; ?>">
-                             <div style="clear:both"></div>
-                             <div></div>
-                             <div style="clear:both"></div>
-                            <p><?php _e('On news title click users will redirect to this url.'); ?></p>
-                         </div>
-                      </div>
-                      <div class="stuffbox" id="namediv" style="min-width:550px;">
-                         <h3><label for="link_name">News Content</label></h3>
-                        <div class="inside">
-                            <textarea cols="90" class="required" style="width:530px" rows="6" id="newscont" name="newscont"><?php echo $contant; ?></textarea>
-                             <div style="clear:both"></div>
-                             <div></div>
-                             <div style="clear:both"></div>
-                            <p><?php _e('Two three lines summary'); ?></p>
-                         </div>
-                       </div>
-                        <?php if(isset($_GET['id']) and $_GET['id']>0){ ?> 
-                           <input type="hidden" name="newsid" id="newsid" value="<?php echo $_GET['id'];?>">
-                        <?php
-                        } 
-                        ?>
-                       <input type="submit" name="btnsave" id="btnsave" value="Save Changes" class="button-primary">&nbsp;&nbsp;<input type="button" name="cancle" id="cancle" value="Cancel" class="button-primary" onclick="location.href='admin.php?page=Scrollnews-settings'">
-                                  
-                 </form> 
-                  <script>
-                     var $n = jQuery.noConflict();  
-                     $n(document).ready(function() {  
-                        $n("#addnews").validate({
-                                 errorClass: "news_error",
-                                 errorPlacement: function(error, element) {
-                                 error.appendTo( element.next().next().next());
-                             }
+                <?php if(isset($_GET['id']) and $_GET['id']>0)
+                    { 
 
-                        })
-                    });
-                    
-                </script> 
+                        $id= $_GET['id'];
+                        $query="SELECT * FROM ".$wpdb->prefix."scroll_news WHERE id=$id";
+                        $myrow  = $wpdb->get_row($query);
 
-                </div>
-          </div>
-        </div>  
-     </div>      
-         </div>
-         <div id="poststuff" class="metabox-holder has-right-sidebar" style="float:right;width:30%;"> 
-            
-             <div class="postbox"> 
-              <h3 class="hndle"><span></span>Recommended WordPress SEO Tools</h3> 
-              <div class="inside">
-                   <center><a href="http://www.semrush.com/sem.html?ref=961672083"> <img width="300" height="250" src="http://www.berush.com/images/240x240_semrush_en.png" /></a></center>
+                        if(is_object($myrow)){
 
-                  <div style="margin:10px 5px">
-          
-                  </div>
-          </div></div>
-           
-           <div class="postbox"> 
-              <h3 class="hndle"><span></span>Find Low Competition Keywords</h3> 
-              <div class="inside">
-                   <center><a href="http://42eb4jw9flkrluf45q50poct4o.hop.clickbank.net/?tid=FP76479Y" target="_top"><img src="http://nichefinder.bradcallen.com/affiliates/banners/320x250.jpg" width="320" height="250" border="1" ALT="Click to Visit"></a></center>
+                            $title=stripslashes($myrow->title);
+                            $newsurl=$myrow->custom_link;
+                            $contant=stripslashes($myrow->content);
 
-                  <div style="margin:10px 5px">
-          
-                  </div>
-          </div></div>
-           
-           
-           </div> 
+                        }   
+
+                    ?>
+
+                    <h2>Update News </h2>
+
+                    <?php }else{ 
+
+                        $title='';
+                        $newsurl='';
+                        $contant='';
+
+                    ?>
+                    <h2>Add News </h2>
+                    <?php } ?>
+
+                <div id="poststuff">
+                    <div id="post-body" class="metabox-holder columns-2">
+                        <div id="post-body-content">
+                            <form method="post" action="" id="addnews" name="addnews">
+
+                                <div class="stuffbox" id="namediv" style="width:100%">
+                                    <h3><label for="link_name">News Title</label></h3>
+                                    <div class="inside">
+                                        <input type="text" id="newstitle"  class="required"  size="30" name="newstitle" value="<?php echo $title;?>">
+                                        <div style="clear:both"></div>
+                                        <div></div>
+                                        <div style="clear:both"></div>
+                                        <p><?php _e('This title will scroll'); ?></p>
+                                    </div>
+                                </div>
+                                <div class="stuffbox" id="namediv" style="width:100%">
+                                    <h3><label for="link_name">News Url</label></h3>
+                                    <div class="inside">
+                                        <input type="text" id="newsurl" class="required url"   size="30" name="newsurl" value="<?php echo $newsurl; ?>">
+                                        <div style="clear:both"></div>
+                                        <div></div>
+                                        <div style="clear:both"></div>
+                                        <p><?php _e('On news title click users will redirect to this url.'); ?></p>
+                                    </div>
+                                </div>
+                                <div class="stuffbox" id="namediv" style="width:100%">
+                                    <h3><label for="link_name">News Content</label></h3>
+                                    <div class="inside">
+                                        <textarea cols="90" class="required" style="width:100%" rows="6" id="newscont" name="newscont"><?php echo $contant; ?></textarea>
+                                        <div style="clear:both"></div>
+                                        <div></div>
+                                        <div style="clear:both"></div>
+                                        <p><?php _e('Two three lines summary'); ?></p>
+                                    </div>
+                                </div>
+                                <?php if(isset($_GET['id']) and $_GET['id']>0){ ?> 
+                                    <input type="hidden" name="newsid" id="newsid" value="<?php echo $_GET['id'];?>">
+                                    <?php
+                                    } 
+                                ?>
+                                <input type="submit" name="btnsave" id="btnsave" value="Save Changes" class="button-primary">&nbsp;&nbsp;<input type="button" name="cancle" id="cancle" value="Cancel" class="button-primary" onclick="location.href='admin.php?page=Scrollnews-settings'">
+
+                            </form> 
+                            <script>
+                                var $n = jQuery.noConflict();  
+                                $n(document).ready(function() {  
+                                        $n("#addnews").validate({
+                                                errorClass: "news_error",
+                                                errorPlacement: function(error, element) {
+                                                    error.appendTo( element.next().next().next());
+                                                }
+
+                                        })
+                                });
+
+                            </script> 
+
+                        </div>
+                    </div>
+                </div>  
+            </div>      
+        </div>
+        <div id="postbox-container-1" class="postbox-container"> 
+
+            <div class="postbox"> 
+                <h3 class="hndle"><span></span>Recommended WordPress SEO Tools</h3> 
+                <div class="inside">
+                    <center><a href="http://www.semrush.com/sem.html?ref=961672083"> <img width="250" height="250" src="http://www.berush.com/images/240x240_semrush_en.png" /></a></center>
+
+                    <div style="margin:10px 5px">
+
+                    </div>
+                </div></div>
+
+            <div class="postbox"> 
+                <h3 class="hndle"><span></span>Find Low Competition Keywords</h3> 
+                <div class="inside">
+                    <center><a href="http://42eb4jw9flkrluf45q50poct4o.hop.clickbank.net/?tid=FP76479Y" target="_top"><img src="http://nichefinder.bradcallen.com/affiliates/banners/320x250.jpg" width="250" height="250" border="1" ALT="Click to Visit"></a></center>
+
+                    <div style="margin:10px 5px">
+
+                    </div>
+                </div></div>
+
+
+        </div> 
+      
+       </div>         
      
-     
+     </div>
     <?php 
     } 
   }else if(strtolower($action)==strtolower('delete')){

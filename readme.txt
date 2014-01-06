@@ -3,7 +3,7 @@ Contributors:nik00726
 Tags:Vertical news,Vertical scrolling news,Scrolling news WordPress,WordPress dynamic news,Free scrolling news wordpress plugin,News plugin WordPress,WordPress set post or page as news
 Donate link: http://www.my-php-scripts.net/donate_for_news_scroller.php
 Requires at least:3.0
-Tested up to:3.7
+Tested up to:3.8
 Stable tag:1.3
 Version:1.3
 License:GPLv2 or later
@@ -36,6 +36,7 @@ Check official website for live demo [http://www.my-php-scripts.net/index.php/Wo
 7. Easy To Install Plugin
 8. Premium Support Available
 9. Admin can change font and other settings from css.
+10. Responsive admin layout
 
 =Pro Version Features=
 
@@ -45,7 +46,7 @@ Check official website for live demo [http://www.my-php-scripts.net/index.php/Wo
 4. Go to add or edit post or page and checkbox check add this post or page as news.
 5. Go to add or edit post or page and checkbox check add this post or page as news.
 6. Vertical News Scroller Open news link in same window Or In new tab
-
+7. Responsive admin layout
 
 [Get Support](http://www.my-php-scripts.net/index.php/Default-form.html) 
 
