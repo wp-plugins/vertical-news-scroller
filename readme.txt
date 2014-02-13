@@ -15,9 +15,8 @@ Vertical News Scroller is plugin for display a vertical scrolling news for WordP
 Simple and easy news scroller.Admin can have option for display text with news or just news title only.Admin can add custom link to news.
 
 
-Check official website for live demo [http://www.my-php-scripts.net/index.php/Wordpress/vertical-news-scroller-advanced.html](http://www.my-php-scripts.net/index.php/Wordpress/vertical-news-scroller-advanced.html)
 
-*   [Live Demo](http://my-php-scripts.net/wpdemo/2013/01/30/wp-thumbnail-slider-and-wp-news-slider/)    
+*   [Live Demo](http://www.i13websolution.com/wpdemo/wp-thumbnail-slider-and-wp-news-slider/)    
 
 
 **Find Vertical News Scroller Pro Plugin at [I Thirteen Web Solution](http://www.i13websolution.com/wordpress-pro-plugins/wordpress-vertical-news-scroller-pro.html)**
