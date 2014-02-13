@@ -1,9 +1,9 @@
 === Vertical News Scroller ===
 Contributors:nik00726
 Tags:Vertical news,Vertical scrolling news,Scrolling news WordPress,WordPress dynamic news,Free scrolling news wordpress plugin,News plugin WordPress,WordPress set post or page as news
-Donate link: http://www.my-php-scripts.net/donate_for_news_scroller.php
+Donate link: http://www.i13websolution.com/donate_for_news_scroller.php
 Requires at least:3.0
-Tested up to:3.8
+Tested up to:3.8.1
 Stable tag:1.3
 Version:1.3
 License:GPLv2 or later
@@ -20,7 +20,7 @@ Check official website for live demo [http://www.my-php-scripts.net/index.php/Wo
 *   [Live Demo](http://my-php-scripts.net/wpdemo/2013/01/30/wp-thumbnail-slider-and-wp-news-slider/)    
 
 
-**Find Vertical News Scroller Pro Plugin at [Advanced PHP Scripts](http://www.my-php-scripts.net/index.php/Wordpress/vertical-news-scroller-advanced.html)**
+**Find Vertical News Scroller Pro Plugin at [I Thirteen Web Solution](http://www.i13websolution.com/wordpress-pro-plugins/wordpress-vertical-news-scroller-pro.html)**
 
 
 
@@ -48,7 +48,7 @@ Check official website for live demo [http://www.my-php-scripts.net/index.php/Wo
 6. Vertical News Scroller Open news link in same window Or In new tab
 7. Responsive admin layout
 
-[Get Support](http://www.my-php-scripts.net/index.php/Default-form.html) 
+[Get Support](http://www.i13websolution.com/contacts) 
 
 
 == Installation ==
