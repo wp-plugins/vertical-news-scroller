@@ -550,16 +550,16 @@
             </div>      
         </div>
         <div id="postbox-container-1" class="postbox-container"> 
-
+            
             <div class="postbox"> 
-                <h3 class="hndle"><span></span>Recommended WordPress SEO Tools</h3> 
-                <div class="inside">
-                    <center><a href="http://www.semrush.com/sem.html?ref=961672083"> <img width="250" height="250" src="http://www.berush.com/images/240x240_semrush_en.png" /></a></center>
+              <h3 class="hndle"><span></span>Access All Themes One price</h3> 
+              <div class="inside">
+                   <center><a href="http://www.elegantthemes.com/affiliates/idevaffiliate.php?id=11715_0_1_10" target="_blank"><img border="0" src="http://www.elegantthemes.com/affiliates/banners/300x250.gif" width="250" height="250"></a></center>
 
-                    <div style="margin:10px 5px">
-
-                    </div>
-                </div></div>
+                  <div style="margin:10px 5px">
+          
+                  </div>
+          </div></div>
 
             <div class="postbox"> 
                 <h3 class="hndle"><span></span>Find Low Competition Keywords</h3> 
