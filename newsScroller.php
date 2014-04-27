@@ -9,16 +9,22 @@
     */
     
     
-       wp_enqueue_script('jquery'); 
-       wp_enqueue_script('jquery.validate', '/wp-content/plugins/vertical-news-scroller/js/jquery.validate.js', array('jquery'));
-
-      
+      add_action( 'admin_init', 'vertical_news_scroller_plugin_admin_init' );
       register_activation_hook(__FILE__,'install_newsscroller');
       
       add_action('admin_menu',    'scrollnews_plugin_menu');  
       /* Add our function to the widgets_init hook. */
       add_action( 'widgets_init', 'verticalScrollSet' );
 
+      function vertical_news_scroller_plugin_admin_init(){
+
+        $url = plugin_dir_url(__FILE__);  
+        wp_enqueue_script('jquery'); 
+        wp_enqueue_script( 'jquery.validate', $url.'js/jquery.validate.js' );  
+
+
+     }
+     
       function install_newsscroller(){
       
            global $wpdb;
@@ -256,7 +262,7 @@
                                     'fixFileName' => false,
                                 );
                                 // generate pager object
-                                $pager =& Pager::factory($params);
+                                @$pager =& Pager::factory($params);
 
                                 // get data for current page and print
                                 $pageset = $pager->getPageData();
@@ -663,18 +669,21 @@
         
         function widget( $args, $instance ) {
        
-            extract( $args );
+            if(is_array($args)){
+                extract( $args );
+            }
+            
             $title = apply_filters('widget_title', empty( $instance['title'] ) ? 'News Scroll' :$instance['title']);   
             include_once(ABSPATH . WPINC . '/feed.php');
-            echo $before_widget;
-            echo $before_title.$title.$after_title;   
-            $maxitem=(int)$instance['maxitem'];
-            $padding=(int)$instance['padding'];
-            $add_link_to_title=(int)$instance['add_link_to_title'];
-            $show_content=(int)$instance['show_content'];
-            $delay=(int)$instance['delay'];
-            $height=(int)$instance['height'];
-            $scrollamt=(int)$instance['scrollamount'];
+            echo @$before_widget;
+            echo @$before_title.$title.$after_title;   
+            $maxitem=(int)empty( $instance['maxitem'] ) ? 5 :$instance['maxitem']; 
+            $padding=(int)empty( $instance['padding'] ) ? 5 :$instance['padding']; 
+            $add_link_to_title=(int)empty( $instance['add_link_to_title'] ) ? 1 :$instance['add_link_to_title']; 
+            $show_content=(int)empty( $instance['show_content'] ) ? 1 :$instance['show_content']; 
+            $delay=(int)empty( $instance['delay'] ) ? 5 :$instance['delay'];    
+            $height=(int)empty( $instance['height'] ) ? 200 :$instance['height']; 
+            $scrollamt=(int)empty( $instance['scrollamount'] ) ? 1 :$instance['scrollamount']; 
             global $wpdb;
             $query="SELECT * FROM ".$wpdb->prefix."scroll_news order by createdon desc limit $maxitem";
             $rows=$wpdb->get_results($query,'ARRAY_A');
