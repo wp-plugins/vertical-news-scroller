@@ -8,7 +8,7 @@
     Version:1.3
     */
     
-    
+      error_reporting(0);
       add_action( 'admin_init', 'vertical_news_scroller_plugin_admin_init' );
       register_activation_hook(__FILE__,'install_newsscroller');
       
