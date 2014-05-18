@@ -39,13 +39,14 @@ Simple and easy news scroller.Admin can have option for display text with news o
 
 =Pro Version Features=
 
-1. Now pro version has two type news style modern(jquery scroller) and classic(marquee).
-2. Pro version support shortcode so you can print it any where in WordPress.
-3. Admin can set any post or page as a news no need to add edit news manually.
-4. Go to add or edit post or page and checkbox check add this post or page as news.
+1. Now support multiple news category(category wise news)
+2. Now pro version has two type news style modern(jquery scroller) and classic(marquee).
+3. Pro version support shortcode so you can print it any where in WordPress.
+4. Admin can set any post or page as a news no need to add edit news manually.
 5. Go to add or edit post or page and checkbox check add this post or page as news.
-6. Vertical News Scroller Open news link in same window Or In new tab
-7. Responsive admin layout
+6. Go to add or edit post or page and checkbox check add this post or page as news.
+7. Vertical News Scroller Open news link in same window Or In new tab
+8. Responsive admin layout
 
 [Get Support](http://www.i13websolution.com/contacts) 
 
