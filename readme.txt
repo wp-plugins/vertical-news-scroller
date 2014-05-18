@@ -19,7 +19,7 @@ Simple and easy news scroller.Admin can have option for display text with news o
 *   [Live Demo](http://www.i13websolution.com/wpdemo/wp-thumbnail-slider-and-wp-news-slider/)    
 
 
-**Find Vertical News Scroller Pro Plugin at [I Thirteen Web Solution](http://www.i13websolution.com/wordpress-pro-plugins/wordpress-vertical-news-scroller-pro.html)**
+**Find Vertical News Scroller Pro Plugin (Unlimited News Categories + Much more fatures) at [I Thirteen Web Solution](http://www.i13websolution.com/wordpress-pro-plugins/wordpress-vertical-news-scroller-pro.html)**
 
 
 
@@ -83,9 +83,11 @@ This plugin is easy to install like other plug-ins of Wordpress as you need to j
 1. User site preview of scrolling news
 2. Widget preview admin site. 
 3. Admin manage news preview.
-4. Vertical News Scroller Pro version .
+4. Vertical News Scroller Pro version add news directly from post/page add edit.
 5. Vertical News Scroller Pro version News Scroller Type.
 6. Vertical News Scroller Open news link in same window Or In new tab.
+7. Pro version news categories.
+8. Pro version add news.
 
 
 == License ==
