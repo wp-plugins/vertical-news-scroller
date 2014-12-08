@@ -1,29 +1,22 @@
 <?php
-    /* 
-    Plugin Name:Vertical News Scroller
-    Plugin URI:http://www.i13websolution.com
-    Description:Plugin for scrolling Vertical News on wordpress site.Admin can add any number of news.
-    Author:I Thirteen Web Solution
-    Author URI: http://www.i13websolution.com
+     /* 
+    Plugin Name: Vertical News Scroller
+    Plugin URI:http://www.i13websolution.com/wordpress-pro-plugins/wordpress-vertical-news-scroller-pro.html
+    Author URI:http://www.i13websolution.com/wordpress-pro-plugins/wordpress-vertical-news-scroller-pro.html
+    Description: Plugin for scrolling Vertical News on wordpress theme.Admin can add any number of news.
+    Author:I Thirteen Web Solution	
     Version:1.3
     */
 
     error_reporting(0);
-    add_action( 'admin_init', 'vertical_news_scroller_plugin_admin_init' );
+    //add_action( 'admin_init', 'vertical_news_scroller_plugin_admin_init' );
     register_activation_hook(__FILE__,'install_newsscroller');
 
     add_action('admin_menu',    'scrollnews_plugin_menu');  
     /* Add our function to the widgets_init hook. */
     add_action( 'widgets_init', 'verticalScrollSet' );
 
-    function vertical_news_scroller_plugin_admin_init(){
-
-        $url = plugin_dir_url(__FILE__);  
-        wp_enqueue_script('jquery'); 
-        wp_enqueue_script( 'jquery.validate', $url.'js/jquery.validate.js' );  
-
-
-    }
+    
 
     function install_newsscroller(){
 
@@ -47,10 +40,18 @@
 
     function scrollnews_plugin_menu(){
 
-        add_menu_page(__('Scroll news'), __("Manage Scrolling News"), 'administrator', 'Scrollnews-settings','managenews');
-
+        $hook_suffix_v_n=add_menu_page(__('Scroll news'), __("Manage Scrolling News"), 'administrator', 'Scrollnews-settings','managenews');
+        add_action( 'load-' . $hook_suffix_v_n , 'vertical_news_scroller_plugin_admin_init' );
     }
 
+    function vertical_news_scroller_plugin_admin_init(){
+    
+    	$url = plugin_dir_url(__FILE__);
+    	wp_enqueue_script('jquery');
+    	wp_enqueue_script( 'jquery.validate', $url.'js/jquery.validate.js' );
+    
+    
+    }
 
     /* Function that registers our widget. */
     function verticalScrollSet() {
