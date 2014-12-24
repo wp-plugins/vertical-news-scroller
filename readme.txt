@@ -3,7 +3,7 @@ Contributors:nik00726
 Tags:Vertical news,Vertical scrolling news,Scrolling news WordPress,WordPress dynamic news,Free scrolling news wordpress plugin,News plugin WordPress,WordPress set post or page as news
 Donate link: http://www.i13websolution.com/donate_for_news_scroller.php
 Requires at least:3.0
-Tested up to:4.0
+Tested up to:4.1
 Stable tag:1.3
 Version:1.3
 License:GPLv2 or later
@@ -11,7 +11,7 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-**Now Support Upto WordPress 4.0**
+**Now Support Upto WordPress 4.1**
 
 Vertical News Scroller is plugin for display a vertical scrolling news for WordPress blog.Admin can manage any number of news.Admin can add,edit delete news.
  
