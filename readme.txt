@@ -19,7 +19,7 @@ Simple and easy news scroller.Admin can have option for display text with news o
 
 
 
-*   [Live Demo](http://www.i13websolution.com/wpdemo/wordpress-news-slider/)    
+*   [Live Demo](http://blog.i13websolution.com/live-preview-vertical-news-scroller/)    
 
 
 **Find Vertical News Scroller Pro Plugin (Unlimited News Categories + Much more fatures) at [I Thirteen Web Solution](http://www.i13websolution.com/wordpress-pro-plugins/wordpress-vertical-news-scroller-pro.html)**
