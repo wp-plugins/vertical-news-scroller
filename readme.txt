@@ -11,7 +11,6 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-**Now Support Upto WordPress 4.1**
 
 Vertical News Scroller is plugin for display a vertical scrolling news for WordPress blog.Admin can manage any number of news.Admin can add,edit delete news.
  
